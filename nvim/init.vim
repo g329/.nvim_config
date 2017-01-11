@@ -1,11 +1,10 @@
-set termguicolors
 
 " dein settings {{{
 if &compatible
   set nocompatible
 endif
-" dein.vimのディレクトリ
-let s:dein_dir = expand('~/.cache/dein')
+" dein.vimのディレクトリを指定
+let s:dein_dir = expand('~/.nvim_cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " なければgit clone
@@ -27,22 +26,21 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 " プラグインの追加・削除やtomlファイルの設定を変更した後は
-" 適宜 call dein#update や call dein#clear_state を呼んでください。
-" そもそもキャッシュしなくて良いならload_state/save_stateを呼ばないようにしてください。
+" 適宜 call dein#update() や call dein#clear_state() を呼ぶ
+" そもそもキャッシュしなくて良いならload_state/save_stateを呼ばない
 
-" 2016.04.16 追記
-" load_cache -> load_state
-" save_cache -> save_state
-" となり書き方が少し変わりました。
-" 追記終わり
-
-" vimprocだけは最初にインストールしてほしい
+" vimprocを最初にインストール
 if dein#check_install(['vimproc'])
   call dein#install(['vimproc'])
 endif
-" その他インストールしていないものはこちらに入れる
+
+" その他
 if dein#check_install()
   call dein#install()
 endif
 " }}}
 
+" color setting
+colorscheme monokai 
+set termguicolors
+syntax enable
