@@ -5,9 +5,6 @@ depends = ['neomru.vim']
 on_event = 'BufRead'
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]

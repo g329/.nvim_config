@@ -21,4 +21,12 @@ repo = 'Shougo/neosnippet-snippets'
 repo = 'cespare/vim-toml'
 
 [[plugins]]
-repo = 'miyakogi/seiya.vim'
+repo = 'kassio/neoterm'
+
+[[plugins]] # ステータスライン
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+    let g:lightline = { 
+    \   'colorscheme': 'default'
+    \}
+'''
