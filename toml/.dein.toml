@@ -1,8 +1,14 @@
 [[plugins]]
-repo = 'sickill/vim-monokai'
+repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'sickill/vim-monokai'
+
+[[plugins]]
+repo = 'raphamorim/lucario'
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
@@ -10,3 +16,9 @@ build = 'make'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
